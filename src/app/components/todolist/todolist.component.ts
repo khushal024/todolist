@@ -12,4 +12,7 @@ export class TodolistComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  myname() {
+    alert('chakachak')
+  }
 }
