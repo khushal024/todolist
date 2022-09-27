@@ -12,7 +12,26 @@ export class TodolistComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  myname() {
-    alert('chakachak')
+  myname(nono: number) {
+    alert(nono)
   }
+
+  printdata(val: string) {
+    console.log(val)
+  }
+
+  /* No need for let, var, const, in class & constroctor*/
+  count = 0;
+  counter(type: string) {
+    if (type === 'add') {
+      this.count++
+    }
+    else {
+      this.count--
+    }
+
+    // type === 'add' ? this.count++ : this.count-- ;
+
+  }
+
 }
