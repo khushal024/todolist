@@ -1,16 +1,13 @@
-<textarea type="text" #box placeholder="anyything" (keyup)="printdata(box.value)"></textarea>
-<br />
-<div> I am copying your text 
-    <strong class="d-block">{{box.value}}</strong>
-    <strong class="d-block">Your text's length is {{box.value.length}}</strong>
+<h2>Your {{title}}</h2> 
+<div>
+    <div><input type="text" #gettask placeholder="Type your task" formControlName="first"><button (click)="addtask(gettask.value)">add +</button></div>
+    <div id="todocontainer"> 
+<ul >
+<li *ngFor="let item of alltask" > 
+{{item.task}} <button (click)="removetask(item.id)">Remove this({{item.id + 1}})</button>
+</li>
+</ul>
 
-</div>
-<button class="btn btn-primary" (click)="myname(12121)">First clickable object</button>
+    </div>
 
-
-<hr>
-<br/>
-<h2>Counter</h2>
-<button (click)="counter('minus')" class="btn btn-dark">-</button> 
-<strong class="mx-2 border border-dark px-4 py-2">{{count}}</strong>
-<button (click)="counter('add')" class="btn btn-danger">+</button>
+  </div>

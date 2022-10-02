@@ -1,0 +1,34 @@
+<textarea type="text" #box placeholder="anyything" (keyup)="printdata(box.value)"></textarea>
+<br />
+<div> I am copying your text 
+    <strong class="d-block">{{box.value}}</strong>
+    <strong class="d-block">Your text's length is {{box.value.length}}</strong>
+
+</div>
+<button class="btn btn-primary" (click)="myname(12121)">First clickable object</button>
+
+
+<hr>
+<br/>
+<h2>Counter</h2>
+<button (click)="counter('minus')" class="btn btn-dark">-</button> 
+<strong class="mx-2 border border-dark px-4 py-2">{{count}}</strong>
+<button (click)="counter('add')" class="btn btn-danger">+</button>
+
+<hr>
+
+<br/>
+
+<input #chahah type="text" [disabled]="disableinput">
+
+<button (click)="enableit()">Enable</button>
+
+
+<hr>
+<br />
+<h2>if else</h2>
+<input type="number" #ifelsetest >
+
+<ng-template #ifblock>divisible</ng-template>
+
+<ng-template #other_condition>other content here...</ng-template> 

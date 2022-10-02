@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-todo-list';
+  title = 'to do list';
+  welcome = ''
+
+  constructor() {
+    setTimeout(() => {
+      this.welcome = "Welcome";
+    }, 1000);
+  }
+
 }
+
+

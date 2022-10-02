@@ -6,32 +6,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./todolist.component.scss']
 })
 export class TodolistComponent implements OnInit {
-
+  value: any;
+  title = 'to do list';
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  myname(nono: number) {
-    alert(nono)
+
+
+  alltask: any = [];
+
+
+  addtask(item: string) {
+
+    this.alltask.push({ id: this.alltask.length, task: item });
+
+    console.log(this.alltask)
+  }
+  removetask(id: Number) {
+    console.log(id)
+    this.alltask = this.alltask.filter((item: any) => item.id !== id)
   }
 
-  printdata(val: string) {
-    console.log(val)
-  }
 
-  /* No need for let, var, const, in class & constroctor*/
-  count = 0;
-  counter(type: string) {
-    if (type === 'add') {
-      this.count++
-    }
-    else {
-      this.count--
-    }
-
-    // type === 'add' ? this.count++ : this.count-- ;
-
-  }
-
-}
+} 
