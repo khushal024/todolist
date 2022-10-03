@@ -1,0 +1,18 @@
+<div class="main-todo py-4 mb-4">
+<h2 class="text-center">{{name}} {{title}}</h2>  
+<div class="todocontainer">
+    <div class="form">
+        <input type="text" #gettask placeholder="Type your task" [(ngModel)]="value" >
+
+        <button class="addtaskbtn" (click)="addtask(gettask.value)">Add task</button>
+    </div>  
+    <div id="todocontainer"> 
+        <ul class="tasks">
+            <li *ngFor="let item of alltask" > 
+                {{item.task}} <button class="removebtn" (click)="removetask(item.id)">Remove this</button>
+            </li>  
+        </ul>
+        <button class="delete-all" (click)="removeall()">Delete all</button> 
+    </div>
+</div>
+</div>

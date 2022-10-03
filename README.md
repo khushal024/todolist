@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # Todolist
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
+=======
+# MyTodoList
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
+>>>>>>> 8a52ab3cb898e687e20da83552776c137cd70e59
 
 ## Development server
 

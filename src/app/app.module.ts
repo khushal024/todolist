@@ -1,24 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-// import { AlertModule } from 'ngx-bootstrap';   
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TodolistComponent } from './components/todolist/todolist.component';
 import { HeaderComponent } from './components/header/header.component';
-import { MytodosComponent } from './components/mytodos/mytodos.component';
-import { PrcticeComponent } from './components/prctice/prctice.component';
+import { PracticeComponent } from './components/practice/practice.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MytodosComponent,
-    PrcticeComponent,  
-    HeaderComponent
-  ], 
+    TodolistComponent,
+    HeaderComponent,
+    PracticeComponent 
+  ],
   imports: [
     BrowserModule,
-    AppRoutingModule, 
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

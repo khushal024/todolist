@@ -25,7 +25,11 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
+<<<<<<< HEAD
       dir: require('path').join(__dirname, './coverage/todolist'),
+=======
+      dir: require('path').join(__dirname, './coverage/my-todo-list'),
+>>>>>>> 8a52ab3cb898e687e20da83552776c137cd70e59
       subdir: '.',
       reporters: [
         { type: 'html' },
