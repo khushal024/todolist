@@ -1,9 +1,9 @@
-<textarea type="text" #box placeholder="anyything" (keyup)="printdata(box.value)"></textarea>
+<input  [type]="text" [(value)]="nameval" #box placeholder="anyything" (keyup)="printdata(nameval)">
 <br />
 <div> I am copying your text 
     <strong class="d-block">{{box.value}}</strong>
     <strong class="d-block">Your text's length is {{box.value.length}}</strong>
-
+{{nameval}}
 </div>
 <button class="btn btn-primary" (click)="myname(12121)">First clickable object</button>
 

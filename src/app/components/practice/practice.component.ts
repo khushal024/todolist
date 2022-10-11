@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./practice.component.scss']
 })
 export class PracticeComponent implements OnInit {
+  text: any;
 
   constructor() { }
 
@@ -38,4 +39,5 @@ export class PracticeComponent implements OnInit {
   }
 
 
+  nameval: any = ''
 }

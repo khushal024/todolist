@@ -1,0 +1,19 @@
+<h2>Login !</h2> 
+<br />
+
+<form #loginform="ngForm" (ngSubmit)="login(loginform.value)"> 
+    <input class="{{inputsame}}"  ngModel type="text" name="name" placeholder="Name"> 
+    <input [ngClass]="inputsame" ngModel type="email" name="Email" placeholder="Email"> 
+    <input [ngClass]="inputsame" ngModel type="tel" name="Phone" placeholder="Phone"> 
+    <input [ngClass]="inputsame" ngModel type="password" name="Password" placeholder="Password"> 
+       
+    <button class="d-block w-100 bg-dark text-white">Submit</button>
+</form>
+
+<ul class="list-group">
+    <li class="list-group-item">Your Name : {{newuserData.name}}</li>     
+    <li class="list-group-item">Your Phone : {{newuserData.Phone}}</li>  
+    <li class="list-group-item">Your Email : {{newuserData.Email}}</li> 
+
+</ul>
+ 
