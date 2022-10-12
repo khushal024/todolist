@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { PracticeComponent } from './components/practice/practice.component';
 import { FormsModule } from '@angular/forms';
 import { FormComponent } from './components/form/form.component';
+import { ChildcompComponent } from './components/childcomp/childcomp.component';
+import { KidComponent } from './components/childcomp/kid/kid.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { FormComponent } from './components/form/form.component';
     TodolistComponent,
     HeaderComponent,
     PracticeComponent,
-    FormComponent 
+    FormComponent,
+    ChildcompComponent,
+    KidComponent 
   ],
   imports: [
     BrowserModule,

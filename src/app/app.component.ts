@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'to do list';
   welcome = ''
 
+  passtochild = 'Passed data from parent to child'
   constructor() {
     setTimeout(() => {
       this.welcome = "Welcome";
